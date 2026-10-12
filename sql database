@@ -1,0 +1,21 @@
+CREATE TABLE GroceryItems (
+    ItemID INT PRIMARY KEY,
+    ItemName VARCHAR(100) NOT NULL,
+    Brand VARCHAR(100) NOT NULL,
+    Category VARCHAR(50) NOT NULL,
+    Price DECIMAL(6,2) NOT NULL,
+    CountryOfOrigin VARCHAR(50) DEFAULT 'Mexico'
+);
+
+INSERT INTO GroceryItems (ItemID, ItemName, Brand, Category, Price)
+VALUES
+(1, 'Pan Blanco', 'Bimbo', 'Bakery', 2.50),
+(2, 'Frijoles Negros en Lata', 'La Costeña', 'Canned Goods', 1.80),
+(3, 'Salsa Verde', 'Herdez', 'Sauces', 2.20),
+(4, 'Leche Entera 1L', 'Lala', 'Dairy', 1.40),
+(5, 'Galletas Marías', 'Gamesa', 'Snacks', 1.10),
+(6, 'Refresco de Tamarindo 600ml', 'Jarritos', 'Beverages', 1.30),
+(7, 'Harina de Maíz', 'Maseca', 'Baking & Grains', 3.00),
+(8, 'Papas Sabritas Clásicas', 'Sabritas', 'Snacks', 1.50),
+(9, 'Chiles Jalapeños en Escabeche', 'La Costeña', 'Canned Goods', 1.90),
+(10, 'Yogurt Natural 500g', 'Lala', 'Dairy', 2.10);
